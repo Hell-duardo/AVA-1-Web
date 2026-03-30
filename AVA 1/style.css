@@ -1,4 +1,5 @@
-html {scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 footer {
     text-align: center;
@@ -6,7 +7,8 @@ footer {
     font-size: 18px;
     border-style: groove;
     border-width: medium;
-    background-color: rgba(133, 133, 133, 0.774);
+    background-color: rgb(0, 0, 0);
+    color: rgb(199, 68, 68);
     padding-top: 60px;
     padding-bottom: 60px;
     padding-right: 50px;
@@ -16,11 +18,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: rgb(1, 99, 82);
+    padding: 0px 10px;
+    background-color: rgb(0, 0, 0);
     color:rgb(199, 68, 68);
-    border-style: hidden;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .menu {
     display:flex;
@@ -31,7 +36,7 @@ header {
     display:inline-block;
     width: 80px;
     text-align: center;
-    padding: 10px; 
+    padding: 15px; 
     text-decoration: none;
     transition: background-color 0.3s ease;
     color: rgb(199, 68, 68);
@@ -74,20 +79,28 @@ header {
     color:rgb(201, 69, 69);
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 117, 98);
-    align-items: left;
-    min-height: 90vh;
+    background-color: rgba(5, 2, 2, 0.945);
+    align-items: center;
+    min-height: 100vh;
     padding: 100px;
+    width: auto;
+}
+ .img1 img {
+    background-color: rgb(169, 68, 68);
+    height:auto;
+    max-width: 100%;
+    border-radius: 50%;
 }
 .início p{
     color:rgb(255, 255, 255);
-    display: flex;
-    background-color: rgb(0, 117, 98);
+    text-align:justify;
 }
 .texto1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(5, 2, 2, 0.945);
+    color:rgb(255, 255, 255)
 }
 .texto1 .content{
    width: 50%;
@@ -103,10 +116,10 @@ header {
 }
 .links a {
    font-size: 40px;
-    color: #444;
+    color:rgb(169, 68, 68);
     transition: color 0.3s, transform 0.3s;
 }
 .links a:hover {
-    color: pink;
     transform: scale(1.5);
 }
+{}
