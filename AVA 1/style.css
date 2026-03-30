@@ -1,6 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
 footer {
     text-align: center;
     font-weight: bold;
@@ -8,11 +13,10 @@ footer {
     border-style: groove;
     border-width: medium;
     background-color: rgb(0, 0, 0);
-    color: rgb(199, 68, 68);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-right: 50px;
-    padding-left: 50px;
+    color: rgb(243, 243, 243);
+    padding: 60px 50px;
+    width: 100%;
+    margin-top: auto;
 }
 header {
     display: flex;
@@ -79,7 +83,7 @@ header {
     color:rgb(201, 69, 69);
     display: flex;
     justify-content: space-between;
-    background-color: rgba(5, 2, 2, 0.945);
+    background-color: rgba(0, 0, 0, 0.89);
     align-items: center;
     min-height: 100vh;
     padding: 100px;
@@ -94,32 +98,129 @@ header {
 .início p{
     color:rgb(255, 255, 255);
     text-align:justify;
+    font-size: 20px;
+    font-weight: bold;
 }
 .texto1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(5, 2, 2, 0.945);
-    color:rgb(255, 255, 255)
+    background-color: rgba(0, 0, 0, 0.89);
+    color:rgb(255, 255, 255);
+    padding: 100px;
+    gap: 50px;
 }
 .texto1 .content{
    width: 50%;
-   text-align: justify ;
+   text-align: justify;
+   padding-right: 30px;
 }
 .texto1 h1{
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(169, 68, 68)
 }
-.links {
+.texto1 .links {
     display: flex;
-    gap: 20px;
+    gap: 80px;
+    align-items: center;
     justify-content: center;
+    width: 50%;
+    gap: 80px;
+
+}
+.texto1 p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
 }
 .links a {
-   font-size: 40px;
+   font-size: 75px;
     color:rgb(169, 68, 68);
     transition: color 0.3s, transform 0.3s;
 }
 .links a:hover {
     transform: scale(1.5);
 }
-{}
+.texto2 {
+    background-color: rgba(0, 0, 0, 0.89);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    
+}
+.texto2 h1 {
+    text-align: center;
+    color: rgb(169, 68, 68);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+.Formulário {
+    background-color: rgba(0, 0, 0, 0.89);
+    color: rgb(179, 29, 29);                          
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.Formulário form {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Formulário .campo {
+    display:flex;
+    align-items: center;
+    gap: 15px;
+}
+.Formulário label{
+    flex: 0 0 100px;
+    font-size: 18px;
+    color: white;
+}
+.Formulário input,
+.Formulário textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 16px;                       
+    color: black;
+    background-color: white;
+}
+
+.Formulário button {
+    padding: 15px;
+    background-color: rgb(169, 68, 68);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.Formulário button:hover {
+    background-color: rgb(169, 68, 68);
+}
+@media (max-width: 600px) {
+    .Formulário .campo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Formulário label {
+        flex: none;
+        margin-bottom: 5px;
+    }
+}
+
